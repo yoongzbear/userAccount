@@ -13,14 +13,28 @@ const UserProfile = () => {
                 <h1>Welcome, [name]!</h1>
                 <h1>User Profile</h1>
                 <div className="profile">
-                    <label>Username: </label>
-                    <div className="text-box">
-                        <p>[username]</p>
-                    </div>
-                    <label>Full Name: </label>
-                    <div className="text-box">
-                        <p>[full name]</p>
-                    </div>
+                    <table className="profile-table">
+                        <tr>
+                            <td className="profile-label">
+                                <label>Username: </label>
+                            </td>
+                            <td className="profile-text">
+                                <div className="text-box">
+                                    <p>[username]</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="profile-label">
+                                <label>Full Name: </label>
+                            </td>
+                            <td className="profile-text">
+                                <div className="text-box">
+                                    <p>[full name]</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>            
                 </div>
                 <div className="about">
                     <p>About me:</p>
@@ -28,8 +42,10 @@ const UserProfile = () => {
                         <div className="input-box">
                             <textarea rows="6" cols="50" placeholder="About me" />                        
                         </div>
-                        <button>Draft</button>
-                        <button>Submit</button>
+                        <div className="about-button">
+                            <button>Draft</button>
+                            <button>Submit</button>
+                        </div>
                     </form>                
                 </div>
             </div>
