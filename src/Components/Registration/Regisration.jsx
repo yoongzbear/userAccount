@@ -25,7 +25,7 @@ const Registration = () => {
         <div className="input-field">          
           <input type="text" placeholder="Confirm Password" required/>
         </div>
-        <button type="submit" onClick={() => navigate('/login')}>Log In</button>
+        <button type="submit" onClick={() => navigate('/login')}>Register</button>
         <div className ='signin-link'>
           <p>Already have an account? Sign in <Link to="/login">here</Link>!</p>
         </div>
