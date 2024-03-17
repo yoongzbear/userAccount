@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import "./Login.css";
 
 const ForgotPw = () => {
     const navigate = useNavigate();
