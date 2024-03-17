@@ -1,12 +1,12 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./UserProfile.css";
 
 const UserProfile = () => {
     const navigate = useNavigate();
     return (
         <div className="main">
-            <div className="logout-button">
+            <div className="logout-button" onClick={() => navigate('/logout')}>
                 <button>Logout</button>
             </div>
             <div className="profile-body">
