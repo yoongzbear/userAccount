@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate();
     return (
         //logout display
         <div className='wrapper'>
